@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/* Variables */
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    color: var(--veryDarkCyan);
+}
+body{
+    background-color: var(--lightGrayishCyan);
+}
+main{
+    margin-top: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+h1{
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    margin: auto;
+    text-align: center;
+}
+/* app container */
+.appContainer{
+    border-radius: 28px 28px 0 0;
+    background-color: var(--white);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+/* Bill Container */
+.inputBill{
+    margin-bottom: 1.8rem;
+}
+.inputBill label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+.inputBillDefault{
+    background-color: var(--veryLightGrayishCyan);
+    text-align: right;
+    font-size: 24px;
+    font-weight: bolder;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    background-image: url('./images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+.billContainer>p{
+    font-size: 1rem;
+}
+/* Tip Container */
+.tipContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.tipContainer>input{
+    width: 100%;
+}
+.btnTip{
+    padding: 0.5rem 0;
+    border: none;
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    font-size: 1.4rem;
+    border-radius: 4px;
+}
+.selected{
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+}
+.tipContainer>input{
+    background-color: var(--veryLightGrayishCyan);
+    border: none;
+    font-size: 1.4rem;
+    text-align: right;
+}
+.tipContainer>input::placeholder{
+    color: var(--veryDarkCyan);
+    opacity: 0.8;
+}
+/* People */
+.peopleContainer>label{
+    font-size: 1rem;
+}
+.inputPeople{
+    background-image: url('./images/icon-person.svg');
+}
+/* Total */
+.totalContainer{
+    padding: 2.3rem 1.2rem 1.5rem 1.2rem;
+    background-color: var(--veryDarkCyan);
+    border-radius: 16px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.tip, .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 18px;
+}
+.tipText p, .total p{
+    color: var(--white);
+    font-size: 1rem;
+}
+.tipText span, .total span{
+    color: var(--grayishCyan);
+    font-size: 0.8rem;
+}
+.tip h2, .total h2{
+    color: var(--strongCyan);
+    font-size: 1.9rem;
+}
