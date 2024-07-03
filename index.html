@@ -11,43 +11,48 @@
 </head>
 <body>
   <main>
-    <h1>SPLI<br>TTER</h1>
+    <img src="./images/logo.svg" alt="Logo Splitter">
     <section class="appContainer">
       <div class="billContainer">
         <div class="inputBill">
           <label for="bill">Bill</label>
-          <input type="text" name="bill" id="bill" value="142,55" class="inputBillDefault">
+          <input type="text" name="bill" id="bill" placeholder="0" class="inputBillDefault">
         </div>
         <p>Select Tip %</p>
         <div class="tipContainer">
           <button class="btnTip">5%</button>
           <button class="btnTip">10%</button>
-          <button class="btnTip selected">15%</button>
+          <button class="btnTip">15%</button>
           <button class="btnTip">25%</button>
           <button class="btnTip">50%</button>
           <input type="text" name="custom" id="custom" placeholder="Custom">
         </div>
         <div class="peopleContainer">
-          <label for="people">Number of People</label>
-          <input type="text" name="people" id="people" class="inputBillDefault inputPeople" value="5">
+          <div>
+            <label for="people">Number of People</label>
+            <label class="msjError">Can't be zero</label>
+          </div>
+          <input type="text" name="people" id="people" class="inputBillDefault inputPeople" placeholder="0">
         </div>
       </div>
       <div class="totalContainer">
-        <div class="tip">
+        <div>
+          <div class="tip">
           <div class="tipText">
             <p>Tip Amount</p>
             <span>/ person</span>
           </div>
-          <h2>$4.27</h2>
-        </div>
-        <div class="total">
-          <div class="totalText">
-            <p>Total</p>
-            <span>/ person</span>
+          <h2>$0.00</h2>
           </div>
-          <h2>$32.79</h2>
+          <div class="total">
+            <div class="totalText">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <h2>$0.00</h2>
+          </div>
         </div>
-        <button class=" btnTip selected">RESET</button>
+        <button class="btnTip selected" disabled>RESET</button>
       </div>  
     </section>
   </main>
